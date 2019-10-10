@@ -32,7 +32,7 @@ from core.cipher import cipher
 
 encrpted_length = 512
 
-dirReaderDaemon = Pool(1)
+dirReaderDaemon = Pool(20)
 pool = Pool(5)
 uploadDaemon = Pool(10)
 

@@ -10,8 +10,10 @@ def funcLog(func):
 
 
 
+
 def get_my_logger(name):
-    formatter = logging.Formatter(fmt='%(asctime)s - %(levelname)s - %(module)s - %(message)s')
+#     formatter = logging.Formatter(fmt='%(asctime)s - %(levelname)s - %(module)s - %(message)s')
+    formatter = logging.Formatter(fmt='%(module)s - %(levelname)s - %(message)s')
 
     handler = logging.StreamHandler()
     handler.setFormatter(formatter)
